@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hero"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/border"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/imgHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/imgHero"
+        app:layout_constraintStart_toStartOf="@+id/imgHero"
+        app:layout_constraintTop_toBottomOf="@+id/imgHero" />
+
+    <TextView
+        android:id="@+id/realNameHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Real Name"
+        app:layout_constraintEnd_toEndOf="@+id/nameHero"
+        app:layout_constraintStart_toStartOf="@+id/nameHero"
+        app:layout_constraintTop_toBottomOf="@+id/nameHero" />
+
+    <TextView
+        android:id="@+id/teamHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Team"
+        app:layout_constraintEnd_toEndOf="@+id/realNameHero"
+        app:layout_constraintStart_toStartOf="@+id/realNameHero"
+        app:layout_constraintTop_toBottomOf="@+id/realNameHero" />
+
+    <TextView
+        android:id="@+id/firstappearanceHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="First Apperance"
+        app:layout_constraintEnd_toEndOf="@+id/teamHero"
+        app:layout_constraintStart_toStartOf="@+id/teamHero"
+        app:layout_constraintTop_toBottomOf="@+id/teamHero" />
+
+    <TextView
+        android:id="@+id/createdbyHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Created By"
+        app:layout_constraintEnd_toEndOf="@+id/firstappearanceHero"
+        app:layout_constraintStart_toStartOf="@+id/firstappearanceHero"
+        app:layout_constraintTop_toBottomOf="@+id/firstappearanceHero" />
+
+    <TextView
+        android:id="@+id/publisherHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Publisher"
+        app:layout_constraintEnd_toEndOf="@+id/createdbyHero"
+        app:layout_constraintStart_toStartOf="@+id/createdbyHero"
+        app:layout_constraintTop_toBottomOf="@+id/createdbyHero" />
+
+    <TextView
+        android:id="@+id/bioHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Bio"
+        app:layout_constraintEnd_toEndOf="@+id/publisherHero"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/publisherHero"
+        app:layout_constraintTop_toBottomOf="@+id/publisherHero" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
